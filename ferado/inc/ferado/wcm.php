@@ -39,9 +39,9 @@ if ( ! function_exists( 'wr_ferado_add_to_cart_fragment' ) ) {
 		global $woocommerce;
 		ob_start();
 	?>
-		<a class="cart-control" href="<?php echo esc_url( $woocommerce->cart->get_cart_url() ); ?>" title="<?php _e( 'View your shopping cart', 'ferado' ); ?>">
-			<i class="dashicons dashicons-cart"></i>
-			<span><?php echo esc_html( $woocommerce->cart->get_cart_contents_count() ); ?></span>
+		<a class="cart-control" href="<?php echo esc_url( wc_get_cart_url() ); ?>" title="<?php _e( 'View your shopping cart', 'ferado' ); ?>">
+                    <i class="dashicons dashicons-cart"></i>
+                    <span><?php echo esc_html( WC()->cart->get_cart_contents_count() ); ?></span>
 		</a>
 	<?php
 		$fragments['a.cart-control'] = ob_get_clean();

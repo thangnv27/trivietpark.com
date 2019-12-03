@@ -8,9 +8,9 @@
  *
  * Websites: http://www.woorockets.com
  */
-if(is_home() or is_front_page()){
-    include 'inc/bbit-compress.php';
-}
+//if(is_home() or is_front_page()){
+//    include 'inc/bbit-compress.php';
+//}
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
